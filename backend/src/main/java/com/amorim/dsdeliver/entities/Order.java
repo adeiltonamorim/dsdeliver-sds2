@@ -53,8 +53,7 @@ public class Order implements Serializable {
 		this.status = status;
 	}
 	
-	public Order of(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status,
-			Set<Product> products) {
+	public static Order of(Long id, String address, Double latitude, Double longitude, Instant moment, OrderStatus status) {
 		return new Order(id, address, latitude, longitude, moment, status);
 	}
 

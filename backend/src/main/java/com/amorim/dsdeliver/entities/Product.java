@@ -104,7 +104,7 @@ public class Product implements Serializable {
 		return true;
 	}
 
-	public Product of(Long id, String name, Double price, String description, String imageUri) {
+	public static Product of(Long id, String name, Double price, String description, String imageUri) {
 		return new Product(id, name, price, description, imageUri);
 	}
 	
